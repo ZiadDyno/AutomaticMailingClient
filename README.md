@@ -1,4 +1,4 @@
-```
+
 # 📧 AutomaticMailingClient
 
 A simple and effective Python script for sending personalized emails with attachments to multiple recipients using Gmail’s SMTP server.
