@@ -58,6 +58,6 @@ def send_emails(mode, csv_path, cv_path, sender_email, sender_password, signatur
                 print(f"❌ Failed to send to {email}: {e}")
                 results.append((email, False))
 
-            time.sleep(5)
+            time.sleep(2)
     server.quit()
     return results
