@@ -1,0 +1,5 @@
+email,subject,body
+testuser1@gmail.com,Hello Test,This is a test email body. 1st
+invalid-email,Invalid Email,This should fail due to invalid email format.
+user2@yahoo.com,Yahoo Domain,This email will be the third email.
+example@gmail.com,Final Test,Last email test body.
