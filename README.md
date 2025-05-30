@@ -162,5 +162,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👤 Author
 
 Ziad — [LinkedIn](https://www.linkedin.com/in/ziad-el-boshy/) • [GitHub](https://github.com/ZiadDyno)
-
-```
