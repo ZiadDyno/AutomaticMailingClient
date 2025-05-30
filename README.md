@@ -15,23 +15,32 @@ A simple and effective Python script for sending personalized emails with attach
 ## 📂 Project Structure
 
 ```
+AutomaticMailingClient/           # Root project directory
+├── LICENSE                       # License file for legal usage terms
+├── README.md                     # Project overview, usage instructions, etc.
+├── src/                          # Contains all source code and essential files for the app
+│   ├── main.py                   # Main Python script to run the mailing client
+│   ├── sender_email.txt          # Text file containing sender's Gmail address
+│   ├── sender_password.txt       # Text file containing sender's Gmail app-specific password
+│   ├── receiver_email.txt        # List of recipient email addresses (one per line)
+│   ├── subject_file.txt          # File containing the email subject line
+│   ├── email_body.txt            # File containing the email body content
+│   └── cv.pdf                    # The attachment file (e.g., resume/CV) to be sent
 
-AutomaticMailingClient/
-├── main.py                # Main script
-├── sender\_email.txt       # Your email address
-├── sender\_password.txt    # Your email password or app-specific password
-├── receiver\_email.txt     # List of recipient email addresses (one per line)
-├── subject\_file.txt       # Email subject
-├── email\_body.txt         # Email body content
-└── cv.pdf                 # The file to attach (e.g., your resume)
 
 ````
 
-## 📄 Requirements
+## 🔐 Gmail Setup (Required!)
 
-- Python 3.x
-- An active Gmail account
-- `Allow less secure apps` enabled **OR** use an [App Password](https://support.google.com/accounts/answer/185833) if using 2FA
+Since Gmail blocks less secure apps:
+
+1. Enable **2-Step Verification**: [https://myaccount.google.com/security](https://myaccount.google.com/security)
+2. Generate an **App Password**:
+
+   * Go to [https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords)
+   * Choose **Mail** > **Windows Computer** (or any device name)
+   * Copy the 16-character app password
+3. Use this App Password instead of your Gmail login password in the app
 
 ## ⚙️ How It Works
 
@@ -68,7 +77,6 @@ python main.py
 ## 📌 Important Notes
 
 * Emails are sent in plain text format.
-* Each recipient gets a unique email.
 * `time.sleep(5)` is added between sends to avoid spam detection.
 
 ## 📬 Example
@@ -89,6 +97,10 @@ Never commit `sender_email.txt` or `sender_password.txt` to a public repository.
 sender_email.txt
 sender_password.txt
 ```
+
+## 🧾 License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 ## 🧑‍💻 Author
 
