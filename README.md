@@ -143,7 +143,7 @@ On each program launch, this file is read to pre-fill the signature box. You can
 
 Here's what the Automatic Mailing Client V2 looks like in action:
 
-![Mailing Client GUI](screenshots/gui.png)
+![Mailing Client GUI](Screenshots/gui.png)
 
 ---
 
